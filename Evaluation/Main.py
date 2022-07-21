@@ -65,21 +65,22 @@ doubleDictionaryList, triDictionaryList, allTokenList = dictionaryBuilder(Health
 tokenMatch(allTokenList,doubleDictionaryList,triDictionaryList,15,10,'Output/HealthApp')
 f_measure, accuracy = evaluate('GroundTruth/HealthApp_2k.log_structured.csv', 'Output/HealthAppEvent.csv')
 
-#Parameters
-#HDFS: 15, 10
-#Apache: 15, 10
-#BGL: 92,4
-#Andriod: 2, 2 (15,10 *)
-#Hadoop: 9, 10
-#Spark: 15, 10
-#Windows: 15, 10
-#HPC: 15, 10
-#Zookeeper: 15, 10
-#OpenSSH: 88, 81
-#OpenStack: 30, 25
-#BGL: 92, 4
-#Thunderbird: 35, 32
-#Linux: 120, 100
-#Mac: 2, 2
-#Proxidier: 500, 470
-#HealthApp: 15, 10
+#We use an automatic approach to gain the threshold. The parameters listed below are suggested thresholds for different datasets.
+
+#Andriod: 14, 13					
+#Apache: 75, 32
+#BGL: 18, 10						
+#HDFS: 15, 15						
+#Hadoop: 9, 6						
+#HPC: 13, 11						
+#Linux: 32, 24						
+#Mac: 11, 10						
+#OpenSSH: 47, 80					
+#OpenStack: 16, 9					
+#Proxifier: 115, 95					
+#Spark: 37, 37						
+#Thunderbird: 8, 7					
+#Windows: 16, 16					
+#Zookeeper: 9, 9					
+#HealthApp: 23, 5
+
